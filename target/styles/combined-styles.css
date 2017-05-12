@@ -1,0 +1,143 @@
+body {
+  margin: 20px;
+}
+section[data-fragment] {
+  display: none;
+}
+section[data-fragment='intro'] {
+  display: block;
+}
+[data-fragment='plugin-popup-container'] {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.pluginContent {
+  position: absolute;
+  z-index: 10;
+  overflow: auto;
+  background: white;
+}
+.pluginClose {
+  position: relative;
+  left: 20px;
+  float: right;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+section[data-fragment='addressNHours'] section[data-address] {
+  float: left;
+  margin: 30px;
+  margin-top: 0px;
+}
+section[data-fragment='addressNHours'] h2 {
+  color: green;
+}
+section[data-fragment='addressNHours'] section[data-hours] ul {
+  list-style-type: none;
+}
+section[data-default='headerNNav'] h1 {
+  background-color: darkgreen;
+  color: white;
+  border-radius: 25px;
+  width: 100%;
+  clear: both;
+  padding: 10px;
+  box-sizing: border-box;
+}
+section[data-default='headerNNav'] nav {
+  float: right;
+}
+section[data-default='headerNNav'] nav li {
+  background-color: gainsboro;
+  border-radius: 20px;
+  display: inline-block;
+  width: 200px;
+  margin: 5px;
+}
+section[data-default='headerNNav'] a {
+  cursor: pointer;
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+section[data-default='headerNNav'] .collapseIcon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  section[data-default='headerNNav'] nav {
+    width: 100%;
+  }
+  section[data-default='headerNNav'] ul {
+    padding: 0px;
+  }
+  section[data-default='headerNNav'] .collapseIcon {
+    width: 100%;
+    display: block;
+    background: gainsboro url(../Images/arrowDown.png) no-repeat 95%;
+    background-size: 30px;
+  }
+  section[data-default='headerNNav'] li:not(.collapseIcon) {
+    display: none;
+  }
+  section[data-default='headerNNav'] nav.showAllMenus li {
+    display: block;
+    width: 100%;
+  }
+  section[data-default='headerNNav'] nav.showAllMenus .collapseIcon {
+    background: gainsboro url(../Images/arrowUp.png) no-repeat 95%;
+    background-size: 30px;
+  }
+}
+section[data-fragment='intro'] div::first-line {
+  margin-left: 20px;
+}
+section[data-fragment='intro'] img {
+  width: 95%;
+  margin: 20px auto;
+}
+[data-plugin="plugin-carousel-holder"] {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+.slideContainer {
+  height: 320px;
+}
+.slides {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+.moveClicks a {
+  width: 100px;
+  padding: 2px;
+  cursor: pointer;
+  border: 1px solid blue;
+  text-align: center;
+  margin: 5px 10px;
+}
+.bulletsHolder li {
+  display: inline-block;
+}
+.bulletsHolder a {
+  border-radius: 50%;
+  width: 20px;
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+}
+.activeBullet {
+  background: black;
+  color: white;
+}
+.buttons {
+  margin: 0px auto;
+}

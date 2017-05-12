@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "bookName": "maisy goes to city",
+      "bookAuthor": "Lucy cousins",
+      "availability": "Not available, rented",
+      "returnDate": "05/06/2016"
+    },
+    {
+      "bookName": "maisy learns to swim",
+      "bookAuthor": "Lucy cousins",
+      "availability": "available",
+      "returnDate": null
+    },
+    {
+      "bookName": "maisy goes to preschool",
+      "bookAuthor": "Lucy cousins",
+      "availability": "available",
+      "returnDate": null
+    }
+  ]
+}

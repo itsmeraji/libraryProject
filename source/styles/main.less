@@ -1,0 +1,37 @@
+body{
+  margin: 20px;
+}
+
+section[data-fragment]{
+  display: none;
+}
+
+section[data-fragment='intro']{
+  display: block;
+}
+
+[data-fragment='plugin-popup-container']{
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.pluginContent{
+  position: absolute;
+  z-index: 10;
+  overflow: auto;
+  background: white;
+}
+
+.pluginClose{
+  position: relative;
+  left: 20px;
+  float: right;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
